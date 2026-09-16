@@ -1,0 +1,58 @@
+Privacy policy
+Effective 16 September 2026. Extension version: 1.2.1 (public variant).
+
+Frameback runs locally inside the Autodarts page. There is no account, no Frameback server, and we send nothing off the device.
+
+What this is
+Frameback is a Chrome extension for play.autodarts.com and play.autodarts.io. It overlays a camera on the board, zooms on checkout, and saves replays on your computer.
+
+What we do not collect
+We do not collect, transmit or sell data. No analytics, ads, developer backend, or remote code. The public variant keeps no diagnostic log and does not export reports.
+
+Camera
+The camera feed comes from getUserMedia in the Autodarts page — a page permission, not an extension permission. Snapshots (at most three, only on your turn) and the replay buffer stay in RAM. A replay is written to disk only when you save it or when you yourself enable auto-save.
+
+Match state
+The extension reads Autodarts WebSocket messages locally (score, turn, checkout) so it knows when to zoom and when to take a snapshot. That data does not leave the browser. We do not read tokens, cookies or sessionStorage.
+
+Settings
+Calibration, the chosen camera and the panel are stored in Autodarts-origin localStorage under adCamOverlay7, adCamProfile and adCamPanel — the same keys as the Tampermonkey script. You can clear them in the site settings.
+
+Where it runs
+Only play.autodarts.com and play.autodarts.io. The extension cannot access other sites. It does not request broad host_permissions, storage, cookies or identity.
+
+Changes
+If data handling changes, this page will be updated before that change ships to the Chrome Web Store.
+
+Contact
+Privacy questions: via the Frameback site or the Chrome Web Store listing (the developer details you enter when publishing).
+
+
+Polityka prywatności
+Obowiązuje od 16 września 2026. Wersja wtyczki: 1.2.1 (wariant publiczny).
+
+Frameback działa wyłącznie lokalnie, w stronie Autodarts. Nie ma konta, nie ma serwera Frameback i nic nie wysyłamy na zewnątrz.
+
+Co to jest
+Frameback to wtyczka Chrome do play.autodarts.com i play.autodarts.io. Nakłada obraz wybranej kamery na tarczę, robi zbliżenie na checkout i zapisuje powtórki na Twoim komputerze.
+
+Czego nie zbieramy
+Nie zbieramy, nie wysyłamy i nie sprzedajemy danych. Nie ma analityki, reklam, konta dewelopera po drugiej stronie, ani zdalnego kodu. Publiczny wariant nie prowadzi dziennika diagnostycznego i nie eksportuje raportów.
+
+Kamera
+Obraz kamery pochodzi z getUserMedia w kontekście strony Autodarts — to uprawnienie strony, nie wtyczki. Kadry (najwyżej trzy, tylko z Twojej kolejki) i bufor powtórki zostają w pamięci RAM przeglądarki. Powtórkę zapisujesz na dysk tylko gdy tego chcesz albo gdy sam włączysz automatyczny zapis.
+
+Stan meczu
+Wtyczka czyta lokalnie komunikaty WebSocket Autodarts (wynik, kolejka, checkout), żeby wiedzieć kiedy zbliżyć obraz i kiedy zrobić zdjęcie. Te dane nie opuszczają przeglądarki. Nie czytamy tokenów, ciasteczek ani sessionStorage.
+
+Ustawienia
+Kalibracja, wybrana kamera i panel zapisują się w localStorage domeny Autodarts pod kluczami adCamOverlay7, adCamProfile i adCamPanel. To ta sama pamięć co przy Tampermonkey. Możesz ją skasować w ustawieniach strony.
+
+Na jakich stronach działa
+Tylko play.autodarts.com i play.autodarts.io. Wtyczka nie ma dostępu do innych witryn, nie żąda host_permissions na całą sieć, storage, cookies ani identity.
+
+Zmiany
+Jeśli sposób przetwarzania danych się zmieni, ta strona zostanie zaktualizowana zanim zmiana trafi do Chrome Web Store.
+
+Kontakt
+Pytania o prywatność: przez stronę Frameback albo listing w Chrome Web Store (dane dewelopera, które podasz przy publikacji).
